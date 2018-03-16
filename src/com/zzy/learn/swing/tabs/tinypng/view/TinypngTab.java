@@ -299,6 +299,7 @@ public class TinypngTab extends Container implements ActionListener, ViewIA, Key
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		pupwindow.removeAll();
+		pupwindow.getContentPane().removeAll();
+		pupwindow.setVisible(false);
 	}
 }
